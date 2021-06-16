@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body-container {
+  background-color: #031525;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header h2 {
+  margin-bottom: 40px;
+  color: #fff;
+  font-size: 2.2em;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+}
+form {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  place-items: center;
+  column-gap: 20px;
+}
+@media screen and (min-width: 800px) {
+  .form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.form div {
+  position: relative;
+}
+.form input {
+  padding: 10px 22px;
+  padding-left: 30px;
+  margin: 10px 0;
+  width: 300px;
+  font-weight: 600;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+.form input:focus {
+  border-color: #1d84b5;
+}
+.to-left,
+.to-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #444;
+  font-size: 14px;
+}
+.to-left {
+  left: 10px;
+}
+.to-right {
+  right: 10px;
+}
+input[type='submit'] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  background-color: #1d84b5;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.terms {
+  text-align: center;
+  font-size: 17px;
+  font-family: 'Roboto Sans', sans-serif;
+}
