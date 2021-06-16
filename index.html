@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Page</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="body-container">
+      <main>
+        <header>
+          <h2>Create your Account</h2>
+        </header>
+        <form method="POST">
+          <div class="form">
+            <div>
+              <i class="fas fa-user-alt to-left"></i>
+              <input type="text" placeholder="First Name" name="fname" />
+            </div>
+            <div>
+              <i class="fas fa-user-alt to-left"></i>
+              <input type="text" placeholder="Last Name" name="lname" />
+            </div>
+            <div>
+              <i class="fas fa-user-circle to-left"></i>
+              <input type="text" placeholder="Username" name="uname" />
+            </div>
+            <div>
+              <i class="fas fa-envelope to-left"></i>
+              <input type="email" placeholder="Email" name="email" />
+            </div>
+            <div>
+              <i class="fas fa-phone-alt to-left"></i>
+              <input
+                type="tel"
+                placeholder="Phone Number"
+                name="phone-number"
+              />
+            </div>
+            <div>
+              <i class="fas fa-birthday-cake to-left"></i>
+              <input
+                type="text"
+                placeholder="Birthday (yyyy-mm-dd)"
+                name="bday"
+              />
+            </div>
+            <div class="password">
+              <i class="fas fa-lock to-left"></i>
+              <input
+                type="password"
+                placeholder="Password"
+                name="password"
+                id="password"
+              />
+              <i class="fas fa-eye to-right" id="button-1"></i>
+            </div>
+            <div class="password">
+              <i class="fas fa-lock to-left"></i>
+              <input
+                type="password"
+                placeholder="Confirm Password"
+                name="confirm-password"
+                id="confirm-password"
+              />
+              <i class="fas fa-eye to-right" id="button-2"></i>
+            </div>
+          </div>
+          <p id="error-handler"></p>
+          <input type="submit" value="Sign Up" />
+          <p class="terms">
+            By signing up, you agree to our <a href="#">terms of service</a>
+          </p>
+        </form>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
